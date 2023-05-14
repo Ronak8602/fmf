@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <div>
         <Routes>
-          <Route path="/" Component={Home} />
+          <Route path="/" element={<Home/>} />
           <Route path="/package/:userId/:mentorCategory/:whatsappNumber/:paymentId/:packageType" element={<Package/>} />
           <Route path="/premium/:paymentId/:token" element={<Premium/>} />  
         </Routes>
